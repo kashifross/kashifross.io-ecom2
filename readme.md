@@ -1,4 +1,4 @@
-# Demezla 
+# Demelza 
 
 This html email uses inline styling and a template that was created by Kashif Ross using Sass and html inline elements. 
 

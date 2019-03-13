@@ -5,4 +5,25 @@ body {
 
 .email-container {
 	background-color: #fff;
+  font-family: 'Roboto', 'Georgia', 'Times New Roman', 'Courier';
+
+}
+
+.header {
+	background-color: #0a1612;
+}
+
+.header--heading {
+	color: #f7ce3e;
+  font-size: 65px;
+	letter-spacing: 2px;
+	padding-top: 20px;
+}
+
+.header--para {
+	color: #f8eee7;
+  font-size: 14px;
+  letter-spacing: 3.1px;
+  margin-top: 0;
+  margin-bottom: 15px;
 }
