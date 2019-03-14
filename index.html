@@ -4,6 +4,8 @@
 	<meta charset="UTF-8">
 	<title></title>
 	<link rel="stylesheet" href="build/css/style.css">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
 
 	<!-- Google Font -->
 	<link href="https://fonts.googleapis.com/css?family=Roboto|Rozha+One" rel="stylesheet">
@@ -12,29 +14,69 @@
 	<style type="text/css">
     @media only screen and (max-width: 480px){
         #templateColumns{
-            width:100% !important;
+					width: 100% !important;
+					padding-bottom: 100px !important;
         }
 
         .templateColumnContainer{
-            display:block !important;
-            width:100% !important;
-        }
+					display: block !important;
+					width: 100% !important;
+				}
 
-        .columnImage{
-            height:auto !important;
-            max-width:480px !important;
-            width:100% !important;
-        }
+				.columnImage {
+					margin-top: 30px;
+					height: auto !important;
+					max-width: 480px !important;
+					width: 100% !important;
+				}
+				
+				.header--heading {
+					color: #0375b4;
+					font-size: 100px;
+					letter-spacing: 2px;
+					padding-top: 20px;
+				}
 
-        .leftColumnContent{
-            font-size:16px !important;
-            line-height:125% !important;
-        }
+				.header--para {
+					color: #f8eee7;
+					font-size: 24px;
+					letter-spacing: 3.1px;
+					margin-top: 0;
+					margin-bottom: 15px;
+				}
 
-        .rightColumnContent{
-            font-size:16px !important;
-            line-height:125% !important;
-        }
+				.email-container--gray {
+					background-color: #f5f5f5;
+				}
+
+				.rightColumnContent {
+					padding-left: 10px;
+				}
+
+				.product--heading-secondary {
+					color: #0375b4;
+					font-size: 45px;
+					margin: 0;
+					padding: 50px 0 0;
+				}
+
+				.product--heading-tertiary {
+					color: #343434;
+					font-size: 40px;
+					letter-spacing: 1.1px;
+					margin: 0;
+					padding-left: 0;
+				}
+
+				.product--para {
+					font-size: 24px;
+					padding: 0 0 50px 0;
+				}
+
+				#button {
+					font-size: 30px;
+					padding: 25px 80px !important;
+				}
     }
 </style>
 </head>
@@ -65,14 +107,14 @@
 							<table class="email-container" id="templateColumns" border="0" cellpadding="0" cellspacing="0" width="600">
 								<tr>
 									<!-- Left -->
-									<td class="templateColumnContainer product1" align="center" valign="top" width="50%">
+									<td class="templateColumnContainer product1" align="left" valign="top" width="50%">
 										<table class="product" border="0" cellpadding="0" cellspacing="0" width="100%">
 											<tr>
-												<td class="leftColumnContent" valign="top" >
+												<td class="leftColumnContent" align="center" valign="top" >
 													<h2 class="product--heading-secondary">Minolta X-700</h2>
 													<h3 class="product--heading-tertiary">Save 20%</h3>
 													<p class="product--para">With the purchase of a 50mm prime lens</p> 
-													<button id="product--btn" style="margin-left:20px; background-color: #ffce00; border: none; border-radius: 3px; padding: 10px 25px; font-size: 14px; color: #0a1612;">Reserve now</button>
+													<a id="button" href="#" target="_blank" style="color:#000; background-color: #f9cf00; text-decoration:none; border-radius: 3px; margin-left: 20px; padding: 15px 60px;">Reserve now</a>
 												</td>
 											</tr>
 										</table>
@@ -81,7 +123,7 @@
 									<td class="templateColumnContainer" align="center" valign="top" width="50%">
 										<table class="product" border="0" cellpadding="0" cellspacing="0" width="100%">
 											<tr>
-												<td class="rightColumnContent">
+												<td align="center" valign="top" class="rightColumnContent">
 													<img width="100%" class="columnImage product--img" src="http://kashifross.com/wp-content/uploads/2019/03/product1.jpg" alt="Minolta x-700 camera" />
 												</td>
 											</tr>
@@ -101,7 +143,7 @@
 										<td class="templateColumnContainer product2" align="center" valign="top" width="50%">
 											<table class="product" border="0" cellpadding="0" cellspacing="0" width="100%">
 												<tr>
-													<td class="leftColumnContent">
+													<td align="center" valign="top" class="leftColumnContent">
 														<img width="100%" class="columnImage product--img" src="http://kashifross.com/wp-content/uploads/2019/03/product2.png" alt="nikon f3 camera" />
 													</td>
 												</tr>
@@ -111,11 +153,11 @@
 										<td class="templateColumnContainer" align="center" valign="top" width="50%">
 											<table class="product product2" border="0" cellpadding="0" cellspacing="0" width="100%">
 												<tr>
-													<td class="rightColumnContent" valign="top" >
+													<td class="rightColumnContent" align="center" valign="top" >
 														<h2 class="product--heading-secondary">Nikon F3</h2>
 														<h3 class="product--heading-tertiary">35mm savings</h3>
 														<p class="product--para">Save up to $300</p> 
-														<button id="product--btn" style="margin-left:20px; background-color: #ffce00; border: none; border-radius: 3px; padding: 10px 25px; font-size: 14px; color: #0a1612;">Reserve now</button>
+														<a id="button" href="#" target="_blank" style="color:#000; background-color: #f9cf00; text-decoration:none; border-radius: 3px; margin-left: 20px; padding: 15px 60px;">Reserve now</a>
 													</td>
 											</table>
 										</td>
@@ -133,7 +175,7 @@
 										<td class="templateColumnContainer" align="center" valign="top" width="50%">
 											<table class="product product1" border="0" cellpadding="0" cellspacing="0" width="100%">
 												<tr>
-													<td class="leftColumnContent" valign="top" >
+													<td class="leftColumnContent"  align="center" valign="top" >
 														<h2 class="product--heading-secondary">Hasselblad 500CM</h2>
 														<h3 class="product--heading-tertiary">Medium Format</h3>
 														<p class="product--para">Call to learn more</p> 
@@ -145,7 +187,7 @@
 										<td class="templateColumnContainer" align="center" valign="top" width="50%">
 											<table class="product product1" border="0" cellpadding="0" cellspacing="0" width="100%">
 												<tr>
-													<td class="rightColumnContent">
+													<td align="center" valign="top" class="rightColumnContent">
 														<img width="100%" class="columnImage product--img" src="http://kashifross.com/wp-content/uploads/2019/03/product3.jpg" alt="hasselblad 500cm camera" />
 													</td>
 												</tr>
@@ -165,7 +207,7 @@
 											<td class="templateColumnContainer" align="center" valign="top" width="50%">
 												<table class="product product2" border="0" cellpadding="0" cellspacing="0" width="100%">
 													<tr>
-														<td class="leftColumnContent">
+														<td align="center" valign="top" class="leftColumnContent">
 															<img width="100%" class="columnImage product--img" src="http://kashifross.com/wp-content/uploads/2019/03/product4.png" alt="Pentax K1000 camera" />
 														</td>
 													</tr>
@@ -175,11 +217,11 @@
 											<td class="templateColumnContainer" align="center" valign="top" width="50%">
 												<table class="product product2" border="0" cellpadding="0" cellspacing="0" width="100%">
 													<tr>
-														<td class="rightColumnContent" valign="top" >
+														<td class="rightColumnContent" align="center" valign="top" >
 															<h2 class="product--heading-secondary">Pentax K1000</h2>
 															<h3 class="product--heading-tertiary">Plenty in stock</h3>
 															<p class="product--para">Learn about our lens selection</p> 
-															<button id="product--btn" style="margin-left:20px; background-color: #ffce00; border: none; border-radius: 3px; padding: 10px 25px; font-size: 14px; color: #0a1612;">Reserve now</button>
+															<a id="button" href="#" target="_blank" style="color:#000; background-color: #f9cf00; text-decoration:none; border-radius: 3px; margin-left: 20px; padding: 15px 60px;">Reserve now</a>
 														</td>
 												</table>
 											</td>
@@ -197,11 +239,11 @@
 										<td class="templateColumnContainer" align="center" valign="top" width="50%">
 											<table class="product product1" border="0" cellpadding="0" cellspacing="0" width="100%">
 												<tr>
-													<td class="leftColumnContent" valign="top" >
+													<td class="leftColumnContent" align="center" valign="top" >
 														<h2 class="product--heading-secondary">Nikon N60</h2>
 														<h3 class="product--heading-tertiary">Looking to trade?</h3>
 														<p class="product--para">Bring yours in today</p> 
-														<button id="product--btn" style="margin-left:20px; background-color: #ffce00; border: none; border-radius: 3px; padding: 10px 25px; font-size: 14px; color: #0a1612;">Schedule an appointment</button>
+														<a id="button" href="#" target="_blank" style="color:#000; background-color: #f9cf00; text-decoration:none; border-radius: 3px; margin-left: 20px; padding: 15px 50px;">Make an appointment</a>
 													</td>
 												</tr>
 											</table>
@@ -210,7 +252,7 @@
 										<td class="templateColumnContainer" align="center" valign="top" width="50%">
 											<table class="product product1" border="0" cellpadding="0" cellspacing="0" width="100%">
 												<tr>
-													<td class="rightColumnContent">
+													<td align="center" valign="top" class="rightColumnContent">
 														<img width="100%" class="columnImage product--img" src="http://kashifross.com/wp-content/uploads/2019/03/product5.jpg" alt="Nikon N60 camera" />
 													</td>
 												</tr>
@@ -230,7 +272,7 @@
 											<td class="templateColumnContainer" align="center" valign="top" width="50%">
 												<table class="product product2" border="0" cellpadding="0" cellspacing="0" width="100%">
 													<tr>
-														<td class="leftColumnContent">
+														<td align="center" valign="top" class="leftColumnContent">
 															<img width="100%" class="columnImage product--img" src="http://kashifross.com/wp-content/uploads/2019/03/product6.png" alt="Olympus OM-10" />
 														</td>
 													</tr>
@@ -240,7 +282,7 @@
 											<td class="templateColumnContainer" align="center" valign="top" width="50%">
 												<table class="product product2" border="0" cellpadding="0" cellspacing="0" width="100%">
 													<tr>
-														<td class="rightColumnContent" valign="top" >
+														<td class="rightColumnContent" align="center" valign="top" >
 															<h2 class="product--heading-secondary">Olympus OM-10</h2>
 															<h3 class="product--heading-tertiary">Huge savings</h3>
 															<p class="product--para">Ask about our accessories</p> 
