@@ -6,95 +6,71 @@
 	<link rel="stylesheet" href="build/css/style.css">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 
-
 	<!-- Google Font -->
-	<link href="https://fonts.googleapis.com/css?family=Roboto|Rozha+One" rel="stylesheet">
-
-	<!-- Media Styling -->
-	<style type="text/css">
-    @media only screen and (max-width: 480px){
-        #templateColumns{
+  <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+	
+  <style type="text/css">
+    @media only screen and (max-width: 480px) {
+        #templateColumns {
 					width: 100% !important;
 					padding-bottom: 100px !important;
         }
-
-        .templateColumnContainer{
+        .templateColumnContainer {
 					display: block !important;
 					width: 100% !important;
 				}
-
-				.columnImage {
-					margin-top: 30px;
+        .product--img {
+          margin-top: 30px;
 					height: auto !important;
 					max-width: 480px !important;
-					width: 100% !important;
+          width: 60% !important;
+        }
+				.header--primary {
+					font-size: 70px !important;
+					letter-spacing: 2px !important;
+					padding-top: 10px !important;
 				}
-				
-				.header--heading {
-					color: #0375b4;
-					font-size: 100px;
-					letter-spacing: 2px;
-					padding-top: 20px;
-				}
-
 				.header--para {
-					color: #f8eee7;
-					font-size: 24px;
-					letter-spacing: 3.1px;
-					margin-top: 0;
-					margin-bottom: 15px;
+					font-size: 19px !important;
+					letter-spacing: 1.1px !important;
+					margin-bottom: 15px !important;
 				}
-
-				.email-container--gray {
-					background-color: #f5f5f5;
+				.product--secondary {
+					font-size: 35px !important;
+					padding: 20px 0 0 !important;
 				}
-
-				.rightColumnContent {
-					padding-left: 10px;
+				.product--tertiary {
+					font-size: 30px !important;
+					letter-spacing: 1.1px !important;
+					padding-left: 0 !important;
 				}
-
-				.product--heading-secondary {
-					color: #0375b4;
-					font-size: 45px;
-					margin: 0;
-					padding: 50px 0 0;
-				}
-
-				.product--heading-tertiary {
-					color: #343434;
-					font-size: 40px;
-					letter-spacing: 1.1px;
-					margin: 0;
-					padding-left: 0;
-				}
-
 				.product--para {
-					font-size: 24px;
-					padding: 0 0 50px 0;
+					font-size: 18px !important;
+					padding: 0 0 20px 0 !important;
 				}
-
 				#button {
-					font-size: 30px;
-					padding: 25px 80px !important;
+					font-size: 20px !important;
+					padding: 15px 60px !important;
 				}
     }
 </style>
+  
 </head>
-<body>
+<body style="margin: 0;">
 	<table class="container" border="0" cellpadding="0" cellspacing="0" height="100%" width="100%">
  		<tr>
 			<td align="center" valign="top">
-				<table class="email-container" border="0" cellpadding="0" cellspacing="0" width="600">
+				<table id="templateColumns" border="0" cellpadding="0" cellspacing="0" width="600" style="background-color: #fff; font-family: 'Roboto', Arial, 'Georgia', 'Times New Roman', 'Courier';">
 					<!-- Begin header -->
 					<tr>
 						<td align="center" valign="top">
-							<table class="header" border="0" cellpadding="0" cellspacing="0" width="100%">
+							<table border="0" cellpadding="0" cellspacing="0" width="100%" style="background-color: #0a1612;">
 								<tr>
 									<td align="center" valign="top">
-										<h1 class="header--heading" style="margin:0;"> 
+										<h1 class="header--primary" style="color: #0375b4; font-size: 65px; letter-spacing: 2px; margin: 0; padding-top: 20px;"> 
 											Demelza
 										</h1>
-										<p class="header--para">New savings on old cameras</p> 
+										<p class="header--para" style="color: #f8eee7; font-size: 14px; letter-spacing: 3.1px; margin-bottom: 15px; margin-top: 0;">New savings on old cameras</p> 
 									</td>
 								</tr>
 							</table>
@@ -104,16 +80,16 @@
 					<!-- Begin product row 1 -->
 					<tr>
 						<td>
-							<table class="email-container" id="templateColumns" border="0" cellpadding="0" cellspacing="0" width="600">
+							<table id="templateColumns" border="0" cellpadding="0" cellspacing="0" width="600" style="background-color: #fff; font-family: 'Roboto', 'Georgia', 'Times New Roman', 'Courier';">
 								<tr>
 									<!-- Left -->
 									<td class="templateColumnContainer product1" align="left" valign="top" width="50%">
 										<table class="product" border="0" cellpadding="0" cellspacing="0" width="100%">
 											<tr>
-												<td class="leftColumnContent" align="center" valign="top" >
-													<h2 class="product--heading-secondary">Minolta X-700</h2>
-													<h3 class="product--heading-tertiary">Save 20%</h3>
-													<p class="product--para">With the purchase of a 50mm prime lens</p> 
+												<td class="leftColumnContent" align="center" valign="top">
+													<h2 class="product--secondary" style="color: #0375b4; font-size: 28px; margin: 0; padding: 80px 0 0 20px;">Minolta X-700</h2>
+													<h3 class="product--tertiary" style="color: #343434; font-size: 24px; letter-spacing: 1.5px; margin: 0; padding-left: 20px;">Save 20%</h3>
+													<p class="product--para" style="font-size: 14px; padding: 0 0 20px 20px;">With the purchase of a 50mm prime lens</p> 
 													<a id="button" href="#" target="_blank" style="color:#000; background-color: #f9cf00; text-decoration:none; border-radius: 3px; margin-left: 20px; padding: 15px 60px;">Reserve now</a>
 												</td>
 											</tr>
@@ -123,8 +99,8 @@
 									<td class="templateColumnContainer" align="center" valign="top" width="50%">
 										<table class="product" border="0" cellpadding="0" cellspacing="0" width="100%">
 											<tr>
-												<td align="center" valign="top" class="rightColumnContent">
-													<img width="100%" class="columnImage product--img" src="http://kashifross.com/wp-content/uploads/2019/03/product1.jpg" alt="Minolta x-700 camera" />
+												<td align="center" valign="top" style="padding-left: 10px;">
+													<img width="100%" class="columnImage product--img" src="http://kashifross.com/wp-content/uploads/2019/03/product1.jpg" alt="Minolta x-700 camera">
 												</td>
 											</tr>
 										</table>
@@ -137,14 +113,14 @@
 					<!-- Begin product row 2 -->
 					<tr>
 							<td>
-								<table class="email-container email-container--gray" id="templateColumns" border="0" cellpadding="0" cellspacing="0" width="600">
+								<table id="templateColumns" border="0" cellpadding="0" cellspacing="0" width="600" style="background-color: #f5f5f5; font-family: 'Roboto', 'Georgia', 'Times New Roman', 'Courier';">
 									<tr>
 										<!-- Left -->
 										<td class="templateColumnContainer product2" align="center" valign="top" width="50%">
 											<table class="product" border="0" cellpadding="0" cellspacing="0" width="100%">
 												<tr>
 													<td align="center" valign="top" class="leftColumnContent">
-														<img width="100%" class="columnImage product--img" src="http://kashifross.com/wp-content/uploads/2019/03/product2.png" alt="nikon f3 camera" />
+														<img width="100%" class="columnImage product--img" src="http://kashifross.com/wp-content/uploads/2019/03/product2.png" alt="nikon f3 camera">
 													</td>
 												</tr>
 											</table>
@@ -153,13 +129,14 @@
 										<td class="templateColumnContainer" align="center" valign="top" width="50%">
 											<table class="product product2" border="0" cellpadding="0" cellspacing="0" width="100%">
 												<tr>
-													<td class="rightColumnContent" align="center" valign="top" >
-														<h2 class="product--heading-secondary">Nikon F3</h2>
-														<h3 class="product--heading-tertiary">35mm savings</h3>
-														<p class="product--para">Save up to $300</p> 
+													<td align="center" valign="top" style="padding-left: 10px;">
+														<h2 class="product--secondary" style="color: #0375b4; font-size: 28px; margin: 0; padding: 80px 0 0 20px;">Nikon F3</h2>
+														<h3 class="product--tertiary" style="color: #343434; font-size: 24px; letter-spacing: 1.5px; margin: 0; padding-left: 20px;">35mm savings</h3>
+														<p class="product--para" style="font-size: 14px; padding: 0 0 20px 20px;">Save up to $300</p> 
 														<a id="button" href="#" target="_blank" style="color:#000; background-color: #f9cf00; text-decoration:none; border-radius: 3px; margin-left: 20px; padding: 15px 60px;">Reserve now</a>
 													</td>
-											</table>
+											  </tr>
+                      </table>
 										</td>
 									</tr>
 								</table>
@@ -169,16 +146,16 @@
 						<!-- Begin product row 3 -->
 					<tr>
 							<td>
-								<table class="email-container" id="templateColumns" border="0" cellpadding="0" cellspacing="0" width="600">
+								<table id="templateColumns" border="0" cellpadding="0" cellspacing="0" width="600" style="background-color: #fff; font-family: 'Roboto', 'Georgia', 'Times New Roman', 'Courier';">
 									<tr>
 										<!-- Left -->
 										<td class="templateColumnContainer" align="center" valign="top" width="50%">
 											<table class="product product1" border="0" cellpadding="0" cellspacing="0" width="100%">
 												<tr>
-													<td class="leftColumnContent"  align="center" valign="top" >
-														<h2 class="product--heading-secondary">Hasselblad 500CM</h2>
-														<h3 class="product--heading-tertiary">Medium Format</h3>
-														<p class="product--para">Call to learn more</p> 
+													<td class="leftColumnContent" align="center" valign="top">
+														<h2 class="product--secondary" style="color: #0375b4; font-size: 28px; margin: 0; padding: 80px 0 0 20px;">Hasselblad 500CM</h2>
+														<h3 class="product--tertiary" style="color: #343434; font-size: 24px; letter-spacing: 1.5px; margin: 0; padding-left: 20px;">Medium Format</h3>
+														<p class="product--para" style="font-size: 14px; padding: 0 0 20px 20px;">Call to learn more</p> 
 													</td>
 												</tr>
 											</table>
@@ -187,8 +164,8 @@
 										<td class="templateColumnContainer" align="center" valign="top" width="50%">
 											<table class="product product1" border="0" cellpadding="0" cellspacing="0" width="100%">
 												<tr>
-													<td align="center" valign="top" class="rightColumnContent">
-														<img width="100%" class="columnImage product--img" src="http://kashifross.com/wp-content/uploads/2019/03/product3.jpg" alt="hasselblad 500cm camera" />
+													<td align="center" valign="top" style="padding-left: 10px;">
+														<img width="100%" class="columnImage product--img" src="http://kashifross.com/wp-content/uploads/2019/03/product3.jpg" alt="hasselblad 500cm camera">
 													</td>
 												</tr>
 											</table>
@@ -201,14 +178,14 @@
 						<!-- Begin product row 4 -->
 						<tr>
 								<td>
-									<table class="email-container email-container--gray" id="templateColumns" border="0" cellpadding="0" cellspacing="0" width="600">
+									<table id="templateColumns" border="0" cellpadding="0" cellspacing="0" width="600" style="background-color: #f5f5f5; font-family: 'Roboto', 'Georgia', 'Times New Roman', 'Courier';">
 										<tr>
 											<!-- Left -->
 											<td class="templateColumnContainer" align="center" valign="top" width="50%">
 												<table class="product product2" border="0" cellpadding="0" cellspacing="0" width="100%">
 													<tr>
 														<td align="center" valign="top" class="leftColumnContent">
-															<img width="100%" class="columnImage product--img" src="http://kashifross.com/wp-content/uploads/2019/03/product4.png" alt="Pentax K1000 camera" />
+															<img width="100%" class="columnImage product--img" src="http://kashifross.com/wp-content/uploads/2019/03/product4.png" alt="Pentax K1000 camera">
 														</td>
 													</tr>
 												</table>
@@ -217,13 +194,14 @@
 											<td class="templateColumnContainer" align="center" valign="top" width="50%">
 												<table class="product product2" border="0" cellpadding="0" cellspacing="0" width="100%">
 													<tr>
-														<td class="rightColumnContent" align="center" valign="top" >
-															<h2 class="product--heading-secondary">Pentax K1000</h2>
-															<h3 class="product--heading-tertiary">Plenty in stock</h3>
-															<p class="product--para">Learn about our lens selection</p> 
+														<td align="center" valign="top" style="padding-left: 10px;">
+															<h2 class="product--secondary" style="color: #0375b4; font-size: 28px; margin: 0; padding: 80px 0 0 20px;">Pentax K1000</h2>
+															<h3 class="product--tertiary" style="color: #343434; font-size: 24px; letter-spacing: 1.5px; margin: 0; padding-left: 20px;">Plenty in stock</h3>
+															<p class="product--para" style="font-size: 14px; padding: 0 0 20px 20px;">Learn about our lens selection</p> 
 															<a id="button" href="#" target="_blank" style="color:#000; background-color: #f9cf00; text-decoration:none; border-radius: 3px; margin-left: 20px; padding: 15px 60px;">Reserve now</a>
 														</td>
-												</table>
+												  </tr>
+                        </table>
 											</td>
 										</tr>
 									</table>
@@ -233,16 +211,16 @@
 							<!-- Begin product row 5 -->
 					<tr>
 							<td>
-								<table class="email-container" id="templateColumns" border="0" cellpadding="0" cellspacing="0" width="600">
+								<table id="templateColumns" border="0" cellpadding="0" cellspacing="0" width="600" style="background-color: #fff; font-family: 'Roboto', 'Georgia', 'Times New Roman', 'Courier';">
 									<tr>
 										<!-- Left -->
 										<td class="templateColumnContainer" align="center" valign="top" width="50%">
 											<table class="product product1" border="0" cellpadding="0" cellspacing="0" width="100%">
 												<tr>
-													<td class="leftColumnContent" align="center" valign="top" >
-														<h2 class="product--heading-secondary">Nikon N60</h2>
-														<h3 class="product--heading-tertiary">Looking to trade?</h3>
-														<p class="product--para">Bring yours in today</p> 
+													<td class="leftColumnContent" align="center" valign="top">
+														<h2 class="product--secondary" style="color: #0375b4; font-size: 28px; margin: 0; padding: 80px 0 0 20px;">Nikon N60</h2>
+														<h3 class="product--tertiary" style="color: #343434; font-size: 24px; letter-spacing: 1.5px; margin: 0; padding-left: 20px;">Looking to trade?</h3>
+														<p class="product--para" style="font-size: 14px; padding: 0 0 20px 20px;">Bring yours in today</p> 
 														<a id="button" href="#" target="_blank" style="color:#000; background-color: #f9cf00; text-decoration:none; border-radius: 3px; margin-left: 20px; padding: 15px 50px;">Make an appointment</a>
 													</td>
 												</tr>
@@ -252,8 +230,8 @@
 										<td class="templateColumnContainer" align="center" valign="top" width="50%">
 											<table class="product product1" border="0" cellpadding="0" cellspacing="0" width="100%">
 												<tr>
-													<td align="center" valign="top" class="rightColumnContent">
-														<img width="100%" class="columnImage product--img" src="http://kashifross.com/wp-content/uploads/2019/03/product5.jpg" alt="Nikon N60 camera" />
+													<td align="center" valign="top" style="padding-left: 10px;">
+														<img width="100%" class="columnImage product--img" src="http://kashifross.com/wp-content/uploads/2019/03/product5.jpg" alt="Nikon N60 camera">
 													</td>
 												</tr>
 											</table>
@@ -266,14 +244,14 @@
 						<!-- Begin product row 6 -->
 						<tr>
 								<td>
-									<table class="email-container email-container--gray" id="templateColumns" border="0" cellpadding="0" cellspacing="0" width="600">
+									<table id="templateColumns" border="0" cellpadding="0" cellspacing="0" width="600" style="background-color: #f5f5f5; font-family: 'Roboto', 'Georgia', 'Times New Roman', 'Courier';">
 										<tr>
 											<!-- Left -->
 											<td class="templateColumnContainer" align="center" valign="top" width="50%">
 												<table class="product product2" border="0" cellpadding="0" cellspacing="0" width="100%">
 													<tr>
 														<td align="center" valign="top" class="leftColumnContent">
-															<img width="100%" class="columnImage product--img" src="http://kashifross.com/wp-content/uploads/2019/03/product6.png" alt="Olympus OM-10" />
+															<img width="100%" class="columnImage product--img" src="http://kashifross.com/wp-content/uploads/2019/03/product6.png" alt="Olympus OM-10">
 														</td>
 													</tr>
 												</table>
@@ -282,12 +260,13 @@
 											<td class="templateColumnContainer" align="center" valign="top" width="50%">
 												<table class="product product2" border="0" cellpadding="0" cellspacing="0" width="100%">
 													<tr>
-														<td class="rightColumnContent" align="center" valign="top" >
-															<h2 class="product--heading-secondary">Olympus OM-10</h2>
-															<h3 class="product--heading-tertiary">Huge savings</h3>
-															<p class="product--para">Ask about our accessories</p> 
+														<td align="center" valign="top" style="padding-left: 10px;">
+															<h2 class="product--secondary" style="color: #0375b4; font-size: 28px; margin: 0; padding: 80px 0 0 20px;">Olympus OM-10</h2>
+															<h3 class="product--tertiary" style="color: #343434; font-size: 24px; letter-spacing: 1.5px; margin: 0; padding-left: 20px;">Huge savings</h3>
+															<p class="product--para" style="font-size: 14px; padding: 0 0 20px 20px;">Ask about our accessories</p> 
 														</td>
-												</table>
+												  </tr>
+                        </table>
 											</td>
 										</tr>
 									</table>
@@ -296,12 +275,12 @@
 							<!-- End product row 6 -->
 					<!-- Begin table footer -->
 					<tr>
-						<td align="center" valign="top">
-							<table class="email-container footer" border="0" cellpadding="20" cellspacing="0" width="600">
+						<td class="templateColumnContainer" align="center" valign="top">
+							<table id="templateColumns" border="0" cellpadding="20" cellspacing="0" width="600" style="background-color: #fff; font-family: 'Roboto', 'Georgia', 'Times New Roman', 'Courier';">
 								<tr>
 									<td align="center" valign="top" style="font-size: 12px;">
 										<p class="footer--para">
-											If you no longer wish to receive this email, please <a href="#" style="color: #000; text-decoration: underline;">unsubscribe</a>.
+											If you no longer wish to receive this email, please <unsubscribe style="color: #000; text-decoration: underline;">unsubscribe</unsubscribe>.
 										</p> 
 										<p class="footer--para">
 											&copy; Demelza Inc. 2018<br>
